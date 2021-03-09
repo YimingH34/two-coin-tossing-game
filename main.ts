@@ -3,6 +3,7 @@ input.onButtonPressed(Button.A, function () {
     let Tails = 0
     Head = 0
     Coin = randint(0, 2)
+    // This is the rolling the first coin
     if (Coin == 1) {
         basic.showLeds(`
             # # # # #
@@ -24,8 +25,10 @@ input.onButtonPressed(Button.A, function () {
         basic.showString("tail")
         tail_1 += 1
     }
+    // This is when you reset the coin so you can roll the coin again.
     Coin = 0
     Coin = randint(0, 2)
+    // Rolling the second coin
     if (Coin == 1) {
         basic.showLeds(`
             # # # # #
